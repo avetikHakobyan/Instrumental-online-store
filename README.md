@@ -2,8 +2,8 @@
 
 Beat/instrumental online store web application that allows artists/record labels to purchase an instrumental (DVD) and the appropriate licenses online to record a song or simply make a profit out of it.
 
-Languages used: C#, JavaScript, cshtml, CSS
-Frameworks used: .NET MVC, Blazor, Bootstrap, jQuery
+- Languages used: C#, JavaScript, cshtml, CSS
+- Frameworks used: .NET MVC, Blazor, Bootstrap, jQuery
 
 Objectives:
 * Create a .NET Core MVC application
