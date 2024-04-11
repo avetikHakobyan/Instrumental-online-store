@@ -29,9 +29,9 @@ It should create 2 databases: H60Assignment3DB_avh_rc and H60Assignment3Identity
 
 -Change values of User id and password to yours in:
 
-avhH60A03\avhH60Store\avhH60Store\appsettings.json
-avhH60A03\avhH60Store\avhH60Services\appsettings.json
-avhH60A03\avhH60Store\avhH60Customer\appsettings.json
+- avhH60A03\avhH60Store\avhH60Store\appsettings.json
+- avhH60A03\avhH60Store\avhH60Services\appsettings.json
+- avhH60A03\avhH60Store\avhH60Customer\appsettings.json
 
 Everything should be running smoothly
 
