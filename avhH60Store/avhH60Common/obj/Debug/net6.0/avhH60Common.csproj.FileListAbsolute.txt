@@ -1,0 +1,56 @@
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.deps.json
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.runtimeconfig.json
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.dll
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.pdb
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.csproj.AssemblyReference.cache
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.AssemblyInfoInputs.cache
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.AssemblyInfo.cs
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.csproj.CoreCompileInputs.cache
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.dll
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\refint\avhH60Common.dll
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.pdb
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.genruntimeconfig.cache
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\ref\avhH60Common.dll
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.deps.json
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.runtimeconfig.json
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.dll
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.pdb
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.csproj.AssemblyReference.cache
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.AssemblyInfoInputs.cache
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.AssemblyInfo.cs
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.csproj.CoreCompileInputs.cache
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.dll
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\refint\avhH60Common.dll
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.pdb
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.genruntimeconfig.cache
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A02\avhH60Store\avhH60Common\obj\Debug\net6.0\ref\avhH60Common.dll
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.deps.json
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.runtimeconfig.json
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.dll
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.pdb
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.csproj.AssemblyReference.cache
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.AssemblyInfoInputs.cache
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.AssemblyInfo.cs
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.csproj.CoreCompileInputs.cache
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.dll
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\refint\avhH60Common.dll
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.pdb
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.genruntimeconfig.cache
+C:\Users\2163147\OneDrive - Cégep Heritage College\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\ref\avhH60Common.dll
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.deps.json
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.runtimeconfig.json
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.dll
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\bin\Debug\net6.0\avhH60Common.pdb
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.csproj.AssemblyReference.cache
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.AssemblyInfoInputs.cache
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.AssemblyInfo.cs
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.csproj.CoreCompileInputs.cache
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.dll
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\refint\avhH60Common.dll
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.pdb
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\avhH60Common.genruntimeconfig.cache
+C:\Users\Avet College\OneDrive - cegep-heritage.qc.ca\3rd Year\420-H60\Assignments\avhH60A03\avhH60Store\avhH60Common\obj\Debug\net6.0\ref\avhH60Common.dll
