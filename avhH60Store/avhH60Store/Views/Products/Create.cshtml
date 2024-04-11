@@ -1,0 +1,64 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = "Create product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <partial name="_ErrorAlert" />
+}
+<h1>Create</h1>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="mb-3">
+                <label asp-for="ProdCatId" class="form-label"></label>
+                <select asp-for="ProdCatId" class ="form-select w-auto" asp-items="ViewBag.ProdCatId">
+                    <option value="">Select a category</option>
+                </select>
+                <span asp-validation-for="ProdCatId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Manufacturer" class="form-label"></label>
+                <input asp-for="Manufacturer" class="form-control" />
+                <span asp-validation-for="Manufacturer" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Stock" class="form-label"></label>
+                <input asp-for="Stock" class="form-control w-auto" />
+                <span asp-validation-for="Stock" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="BuyPrice" class="form-label"></label>
+                <input asp-for="BuyPrice" class="form-control w-auto" />
+                <span asp-validation-for="BuyPrice" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="SellPrice" class="form-label"></label>
+                <input asp-for="SellPrice" class="form-control w-auto" />
+                <span asp-validation-for="SellPrice" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <partial name="_BackToList" />
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

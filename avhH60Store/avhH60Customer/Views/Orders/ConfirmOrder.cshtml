@@ -1,0 +1,78 @@
+﻿@model Order
+
+@{
+    ViewData["Title"] = "Confirm Order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <partial name="_SuccessAlert" />
+} else if (TempData["ErrorMessage"] != null)
+{
+    <partial name="_ErrorAlert" />
+}
+
+<h1 class="mb-3">Confirm order</h1>
+<hr/>
+<div class="mb-3">
+    <h4 class="fw-bold d-inline">Customer: </h4><span class="fs-4">@Model.Customer.FirstName @Model.Customer.LastName</span>
+</div>
+<div>
+    <h5 class="fw-bold d-inline">@Html.DisplayNameFor(o => o.DateCreated): </h5><span class="fs-5">@Model.DateCreated</span>
+</div>
+<div class="mb-4">
+    <h5 class="fw-bold d-inline">Credit card number: </h5><span class="fs-5">@Model.Customer.CreditCard</span>
+</div>
+<table class="table w-50">
+    <thead>
+        <tr>
+            <th>
+                Product
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th>
+                Price
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderItems)
+        {
+            <tr class="border-secondary">
+                <td>
+                    @Html.DisplayFor(model => item.Product.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Quantity)
+                </td>
+                <td class="text-end">
+                    $@Html.DisplayFor(model => item.Price)
+                </td>
+            </tr>
+        }
+        <tr class="text-end border-secondary">
+            <td></td>
+            <td class="fw-bold">
+                Taxes:
+            </td>
+            <td>
+                $@Html.DisplayFor(model => model.Taxes)
+            </td>
+        </tr>
+        <tr class="text-end border-secondary">
+            <td></td>
+            <td class="fw-bold">
+                Total:
+            </td>
+            <td>
+               $@Html.DisplayFor(model => model.Total)
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="text-end w-50">
+    <a class="btn btn-primary" asp-controller="Orders" asp-action="CompleteOrder" asp-route-id="@Model.OrderId">Complete order</a>
+</div>

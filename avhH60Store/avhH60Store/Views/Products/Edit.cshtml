@@ -1,0 +1,53 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = "Edit product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <partial name="_ErrorAlert" />
+}
+<h1>Edit</h1>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ProductId" />
+            <div class="mb-3">
+                <label asp-for="ProdCatId" class="form-label"></label>
+                <select asp-for="ProdCatId" class="form-select" asp-items="ViewBag.ProdCatId">
+                    <option value="">Select a category</option>
+                </select>
+                <span asp-validation-for="ProdCatId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Manufacturer" class="form-label"></label>
+                <input asp-for="Manufacturer" class="form-control" />
+                <span asp-validation-for="Manufacturer" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Stock">
+            <input type="hidden" asp-for="BuyPrice">
+            <input type="hidden" asp-for="SellPrice">
+            <div class="mb-3">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <partial name="_BackToList" />
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

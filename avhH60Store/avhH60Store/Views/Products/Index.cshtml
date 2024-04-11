@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <partial name="_SuccessAlert" />
+}
+
+<h1>Products</h1>
+<form class="row align-items-center mb-3" asp-controller="Products" asp-action="Index">
+    <div class="col">
+        <a class="btn btn-primary" asp-action="Create">Create New</a>
+    </div>
+    <div class="col-auto pe-0">
+        <label for="filterChoice" class="form-label fw-bold">Filter by category: </label>
+    </div>
+    <div class="col-auto">
+        <select id="filterChoice" name="filterChoice" class="form-select w-auto" asp-items="ViewBag.categories" onchange="this.form.submit()">
+            <option value="0">All</option>
+        </select>
+    </div>
+    <div class="col-auto pe-0">
+        <label for="priceSortChoice" class="form-label fw-bold">Sort by price: </label>
+    </div>
+    <div class="col-auto">
+        <select id="priceSortChoice" name="priceSortChoice" class="form-select w-auto" asp-items="ViewBag.priceChoices" onchange="this.form.submit()">
+        </select>
+    </div>
+    <div class="col-auto pe-0">
+        <label for="searchString" class="form-label fw-bold">Search products: </label>
+    </div>
+    <div class="col-auto">
+        <input id="searchString" class="form-control my-3 w-auto" name="searchString" type="search" value="@ViewBag.searchString" placeholder="Description" />
+    </div>
+    <div class="col-auto">
+        <input class="btn btn-success" type="submit" value="Search" />
+    </div>
+</form>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Stock)
+                </th>
+                <th class="text-center">
+                    @Html.DisplayNameFor(model => model.SellPrice)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ProdCat)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Count() > 0)
+            {
+                @foreach (var item in Model)
+                {
+                    <tr class="border-secondary">
+                        <td>
+                            <a class="text-white" asp-action="Details" asp-route-id="@item.ProductId">@Html.DisplayFor(modelItem => item.Description)</a>
+                        </td>
+                        @if (item.Stock == 0)
+                        {
+                            <td>
+                                <span class="text-danger">Out of stock</span>
+                            </td>
+                        } else
+                        {
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Stock)
+                            </td>
+                        }
+                        <td class="text-end pe-5">@Html.DisplayFor(modelItem => item.SellPrice)</td>
+                        <td>@Html.DisplayFor(modelItem => item.ProdCat.ProdCat)</td>
+                        <td>
+                            @if (User.IsInRole("Manager"))
+                            {
+                                <a class="btn btn-secondary" asp-action="UpdateStock" asp-route-id="@item.ProductId">Update Stock</a>
+                                <a class="btn btn-success" asp-action="UpdatePrice" asp-route-id="@item.ProductId">Update Price</a>
+                            }
+                            <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.ProductId">Edit</a>
+                            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.ProductId">Delete</a>
+                        </td>
+                    </tr>
+                }
+            } else
+            {
+                <tr>
+                    <td class="border-0">No products</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

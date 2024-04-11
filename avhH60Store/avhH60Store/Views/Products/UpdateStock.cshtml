@@ -1,0 +1,48 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = "Update Stock";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <partial name="_ErrorAlert" />
+}
+<h1>Update Stock</h1>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="UpdateStock">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="ProductId" type="hidden" />
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label fw-bold">Description: </label><span> @Html.DisplayFor(model => model.Description)</span>
+            </div>
+            @if (Model.Stock != 0)
+            {
+                <div class="mb-3 text-success">
+                    <span class="fw-bold">@Html.DisplayFor(model => model.Stock)</span> in stock
+                </div>
+            } else
+            {
+                <div class="mb-3 text-danger">
+                    <span class="fw-bold">Out of stock</span>
+                </div>
+            }
+            <div class="mb-3">
+                <label asp-for="Stock" class="form-label">Change stock amount by</label>
+                <input asp-for="Stock" value="0" class="form-control w-auto" />
+                <span asp-validation-for="Stock" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <partial name="_BackToList" />
+</div>

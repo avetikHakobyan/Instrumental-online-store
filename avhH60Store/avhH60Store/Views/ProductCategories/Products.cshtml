@@ -1,0 +1,54 @@
+﻿@model IEnumerable<avhH60Common.DTO.ProductCategoryDTO>
+
+@{
+    ViewData["Title"] = "Products by category";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="mb-4">Product Categories</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Category
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Products)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="border-secondary">
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProdCat)
+                </td>
+                <td>
+                    @if (item.Products.Count > 0)
+                    {
+                        <ol>
+                            @foreach (var product in item.Products)
+                            {
+                                <li>
+                                    <a class="text-white" asp-controller="Products" asp-action="Details" asp-route-id="@product.ProductId">@product.Description</a>
+                                </li>
+                            }
+                        </ol>
+                    } else
+                    {
+                        <span>
+                            No products
+                        </span>
+                    }
+                </td>
+                <td>
+                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.CategoryId">Edit</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.CategoryId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

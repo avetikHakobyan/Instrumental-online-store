@@ -1,0 +1,99 @@
+﻿@model IEnumerable<ProductCartDTO>
+
+@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <partial name="_SuccessAlert" />
+} else if (TempData["ErrorMessage"] != null)
+{
+    <partial name="_ErrorAlert" />
+}
+
+<h1>Products</h1>
+<section class="container">
+    <form class="row row-cols-1 row-cols-xl-auto align-items-center mb-3 justify-content-end" asp-controller="Products" asp-action="Index">
+        <div class="col pe-0">
+            <label for="filterChoice" class="form-label fw-bold">Filter by category: </label>
+        </div>
+        <div class="col">
+            <select id="filterChoice" name="filterChoice" class="form-select w-auto" asp-items="ViewBag.categories" onchange="this.form.submit()">
+                <option value="0">All</option>
+            </select>
+        </div>
+        <div class="col pe-0">
+            <label for="priceSortChoice" class="form-label fw-bold">Sort by price: </label>
+        </div>
+        <div class="col">
+            <select id="priceSortChoice" name="priceSortChoice" class="form-select w-auto" asp-items="ViewBag.priceChoices" onchange="this.form.submit()">
+            </select>
+        </div>
+        <div class="col pe-0">
+            <label for="searchString" class="form-label fw-bold">Search products: </label>
+        </div>
+        <div class="col">
+            <input id="searchString" class="form-control my-3 w-auto" name="searchString" type="search" value="@ViewBag.searchString" placeholder="Description" />
+        </div>
+        <div class="col">
+            <input class="btn btn-success" type="submit" value="Search" />
+        </div>
+    </form>
+
+    <div class="row row-cols-sm-6 row-cols-1 justify-content-center container">
+        @if (Model.Count() > 0)
+        {
+            @foreach (var item in Model)
+            {
+                <div class="col m-3 px-0">
+                    <div class="text-center bg-secondary py-6 rounded-3 mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-disc" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1zm4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div>
+                            <a class="text-description fs-5" asp-action="Details" asp-route-id="@item.ProductId">@Html.DisplayFor(modelItem => item.Description)</a>
+                        </div>
+                        <div>
+                            @if (item.Stock == 0)
+                            {
+                                <span class="text-danger fs-6">Out of stock</span>
+                            } else
+                            {
+                                <span class="text-success fs-6">
+                                    @Html.DisplayFor(modelItem => item.Stock) left in stock
+                                </span>
+                            }
+                        </div>
+                        <div class="mb-3">
+                            <span class="text-end pe-5 fs-6">@Html.DisplayFor(modelItem => item.SellPrice)</span>
+                        </div>
+                        <form asp-controller="CartItems" asp-action="AddToCart">
+                            <input type="hidden" name="productId" asp-for="@item.ProductId" />
+                            <div class="d-flex align-content-center mb-2">
+                                <label class="form-label pe-2" asp-for="@item.Quantity"></label>
+                                <input name="quantity" class="form-control form-control-sm w-25 mb-3" asp-for="@item.Quantity" value="1" />
+                                <span asp-validation-for="@item.Quantity" class="text-danger"></span>
+                            </div>
+                            <div class="d-flex justify-content-center justify-content-xl-end">
+                                <button class="btn btn-primary add-to-cart" type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            }
+        } else
+        {
+            <span class="border-0">No products</span>
+        }
+    </div>
+</section>

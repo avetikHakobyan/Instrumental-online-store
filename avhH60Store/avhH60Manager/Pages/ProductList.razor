@@ -1,0 +1,73 @@
+﻿@page "/products"
+@using avhH60Manager.DAL
+@using avhH60Manager.Models
+@inject IStoreRepository _storeRestRepository
+<h3>Products</h3>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead class="text-white">
+            <tr>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Stock
+                </th>
+                <th class="text-center">
+                    Sell Price
+                </th>
+                <th>
+                    Category
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Products != null)
+            {
+                @if (Products.Count() > 0)
+                {
+                    @foreach (var item in Products)
+                    {
+                        <tr class="border-secondary text-white">
+                            <td>
+                                @item.Description
+                            </td>
+                            @if (item.Stock == 0)
+                            {
+                                <td>
+                                    <span class="text-danger">Out of stock</span>
+                                </td>
+                            } else
+                            {
+                                <td>
+                                    @item.Stock
+                                </td>
+                            }
+                            <td class="text-end pe-5">$@item.SellPrice</td>
+                            <td>@item.ProdCat.ProdCat</td>
+                            <td>
+                                <a class="btn btn-secondary">Update Stock</a>
+                                <a class="btn btn-success">Update Price</a>
+                            </td>
+                        </tr>
+                    }
+                } else
+                {
+                    <tr>
+                        <td class="border-0">No products</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+@code {
+    public IEnumerable<Product> Products { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Products = await _storeRestRepository.GetProducts();
+    }
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\avhH60Services.props" />
+</Project>
